@@ -19,6 +19,17 @@ module.exports = function(defaults) {
   // modules that you would like to import into your application
   // please specify an object with the list of modules as keys
   // along with the exports of each module as its value.
+  app.import('vendor/basscss.min.css');
+  app.import('vendor/fontello/fontello.css');
+  app.import('vendor/fontello/font/fontello.eot', {
+    destDir: 'assets/font'
+  });
+  app.import('vendor/fontello/font/fontello.svg', {
+    destDir: 'assets/font'
+  });
+  app.import('vendor/fontello/font/fontell.woff', {
+    destDir: 'assets/font'
+  });
 
   return app.toTree();
 };

@@ -27,7 +27,10 @@ export default Ember.Component.extend({
     },
     cancel() {
       console.log('canceled');
-      this.cancel();
+      this.cancel(this.get('model'));
+    },
+    delete() {
+      console.log('Baron Von Fuckface');
     }
   }
 });
